@@ -1,0 +1,94 @@
+@import "/general.css";
+
+@font-face {
+    font-family: NHG;
+    src: url(/fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+
+h4 {
+    color: #fff;
+    font-size: 2.4em;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: NHG;
+}
+
+body {
+    background: black;
+}
+
+section {
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    padding: 1em;
+}
+
+.front-text {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+}
+
+.front-pic {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+
+/* work */
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.texts{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8em;
+    align-items: center;
+    text-align: center;
+}
+
+.cardp {
+    width: 75%;
+}
+
+.cardpic {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    position: absolute;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}

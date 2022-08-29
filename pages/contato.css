@@ -1,0 +1,38 @@
+@import "/general.css";
+
+@font-face {
+    font-family: own;
+    src: url(/fonts/MinionPro-Medium.otf);
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: own;
+}
+
+body {
+    background: url(/img/aboutbg.jpg)
+}
+
+.title {
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

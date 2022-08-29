@@ -1,0 +1,154 @@
+
+@import "general.css";
+
+
+
+p {
+    color: white;
+    font-family: NHG;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    position: relative;
+}
+
+.title {
+    padding: 1em;
+}
+
+
+.burger {
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    left: 95%;
+    top: 30%
+}
+
+.burger div {
+    width: 60px;
+    height: 3px;
+    margin: 6px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+
+
+.nav-ul {
+    display: none;
+}
+
+.nav-ul.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: black;
+}
+
+.ENA {
+    background-image: url(img/ena.jpg);
+    height: 162vh;
+}
+
+.ENA h1 {
+    color: rgb(0, 0, 0);
+}
+
+.ENA p {
+    font-size: 2.4rem;
+    letter-spacing: 1.2px;
+    line-height: 1.4em;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 1rem;
+    transition: 1s;
+}
+
+.ena-text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 1em;
+}
+
+.ena-text p:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8em;
+    margin-top: 4em;
+    margin-right: 5em;
+
+}
+
+ion-icon {
+    font-size: 1.8em;
+    color: #fff;
+    padding: 12px;
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+@keyframes animate {
+    0% {
+        background-image: url(img/front2.jpg);
+    }
+
+    50% {
+        background-image: url(img/front1.jpg)
+    }
+
+    100% {
+        background-image: url(img/front3.jpg);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .burger {
+        cursor: pointer;
+        width: 100%;
+        position: absolute;
+        left: 80%;
+        top: 80%
+    }
+
+    .ena-text {
+        text-align: justify;
+        width: auto;
+
+    }
+}
