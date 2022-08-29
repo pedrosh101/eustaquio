@@ -1,20 +1,9 @@
 @import "/general.css";
 
 
-h2 {
-    color: #fff;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-size: 2.3rem;
-    font-family: NHG;
-    letter-spacing: 1.7px;
-    line-height: 1.4em;
-}
-
 body {
-    background: url(/img/aboutbg.jpg)
+    background: url(/img/aboutbg.jpg);
+
 }
 
 img {
@@ -22,17 +11,23 @@ img {
     height: auto;
 }
 
-.title {
-    padding: 1em;
-}
-
-section{
+.sectionContainer{
     display: flex;
-    padding: 3rem;
-    gap: 3rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 8rem;
 }
 
-.about-text{
-    width: 80%;
-    text-align: center;
+.sectionContainer p{
+    color: #fff;
+    padding: 8em 0;
+    font-size: 2.3rem;
+    font-family: NHG;
+    letter-spacing: 1.7px;
+    line-height: 1.4em;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
 }

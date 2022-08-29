@@ -16,7 +16,7 @@ p {
 }
 
 body {
-    background: url(/img/aboutbg.jpg)
+    background: url(/img/aboutbg.jpg);
 }
 
 .title {
