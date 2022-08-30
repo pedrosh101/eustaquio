@@ -1,4 +1,3 @@
-
 @import "general.css";
 
 
@@ -31,7 +30,6 @@ p {
     padding: 1em;
 }
 
-
 .burger {
     cursor: pointer;
     width: 100%;
@@ -48,8 +46,6 @@ p {
     background-color: white;
 }
 
-
-
 .nav-ul {
     display: none;
 }
@@ -65,7 +61,6 @@ p {
 
 .ENA {
     background-image: url(img/ena.jpg);
-    height: 162vh;
 }
 
 .ENA h1 {
@@ -96,9 +91,7 @@ p {
     display: flex;
     justify-content: flex-end;
     font-size: 1.8em;
-    margin-top: 4em;
-    margin-right: 5em;
-
+    margin: 3em 5em 2em 0;
 }
 
 ion-icon {
@@ -136,7 +129,7 @@ ion-icon {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:50em) {
 
     .burger {
         cursor: pointer;
@@ -147,8 +140,21 @@ ion-icon {
     }
 
     .ena-text {
-        text-align: justify;
         width: auto;
-
     }
+
+    .ENA p {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .links {
+        margin: 0;
+        justify-content: center;
+    }
+
+    ion-icon {
+        font-size: 1.5em;
+    }
+
 }

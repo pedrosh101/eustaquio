@@ -26,9 +26,10 @@ section {
     min-height: 100vh;
 }
 
-img {
+.cards img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .title {
@@ -60,13 +61,18 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: .8em;
     align-items: center;
     text-align: center;
+    gap: .8em;
 }
 
 .cardp {
     width: 75%;
+    cursor: pointer;
+}
+
+.cards h4{
+    cursor: pointer;
 }
 
 .cardpic {
@@ -75,7 +81,6 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
 
 .container {
     position: absolute;
@@ -91,4 +96,59 @@ img {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+@media screen and (max-width:50em){
+    .front-text {
+        position:inherit;
+        display: flex;
+        justify-content: flex-end;
+        margin: 2em 1em;
+    }
+    
+    .front-pic {
+        position:inherit;
+        display: flex;
+        justify-content: center;
+        margin: 3.2em 0;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    .cards {
+        flex-direction: column-reverse;
+    }
+
+    .rev {
+        flex-direction: column;
+    }
+
+    .cards img {
+        max-width: 89%;
+        margin-bottom: 15px;
+    }
+
+    .cardp {
+        width: 89%;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    section {
+        min-height: 60vh;
+    }
+    
+    .container{
+        margin: 100px 0;
+    }
+
+    .texts{
+        gap: .3em;
+    }
+
+    
 }

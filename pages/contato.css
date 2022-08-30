@@ -1,38 +1,57 @@
 @import "/general.css";
 
-@font-face {
-    font-family: own;
-    src: url(/fonts/MinionPro-Medium.otf);
-}
-
-h2 {
-    color: #fff;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-family: own;
-}
 
 body {
     background: url(/img/aboutbg.jpg);
 }
 
-.title {
-    padding: 1em;
-}
-
 form {
     display: flex;
-    height: 80vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
 }
 
-input[type=text] {
-    width: 100%;
+textarea, input[type=text] {
     padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+    font-size: max(16px, 1em);
+    border-radius: 5px;
+    margin: 11px 0;
+    border: none;
+    outline: none;
+}
+
+.remetente {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #fff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    margin: 11px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:50em) {
+    textarea, input[type=text] {
+        padding: 5px 10px;
+    }
+
+    textarea{
+        max-width: 85%;
+    }
+
+    .remetente{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
